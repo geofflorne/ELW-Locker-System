@@ -137,3 +137,16 @@ p.answer{
     font-family: 'Roboto', sans-serif;
     font-size:18px;
 }
+
+/* CONTACT ADMIN */
+
+form.contact{
+    float:left;
+    width:inherit;
+    margin-left: 30px;
+}
+
+textarea{
+    float:right;
+    margin-right:40px;
+}
