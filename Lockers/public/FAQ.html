@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../main.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css"/>
+    <title>Globo Gym Signin</title>
+
+  </head>
+  <body>
+    <p class="about"><a href="../FAQ.html" class="about">     FAQ  &nbsp</a><a href="/FAQ" class="about"> &nbsp   Registration Policy</a></p>
+    <div class="jumbotron text-center main"><img src="../ess2.png" class="ess"/>
+        <div class="FAQ">
+            <p class="question" onclick="show_more('answer1')">How do I register a locker?</p>
+            <p class="answer" id="answer1" style="display:none;">Go to the main page of this locker. Enter your name and click register. You will be prompted to enter your UVic email.</p>
+            <p class="question" onclick="show_more('answer2')">Can I register more than one locker?</p>  
+            <p class="answer" id="answer2" style="display:none;">No, demand is high, so lockers are limited to one per person.</p>
+            <p class="question" onclick="show_more('answer3')">What if I need muliple lockers for a club?</p>  
+            <p class="answer" id="answer3" style="display:none;">Please use the admin page for special requests</p>                                             <p class="question" onclick="show_more('answer3')">What if I need muliple lockers for a club?</p>  
+
+        </div>
+            
+    </div>
+      
+<script type="text/javascript">
+    function show_more ( element_to_show ) {
+        var element_to_show = document.getElementById(element_to_show);
+        //console.log(element_to_show.style.display);
+        if(element_to_show.style.display == "inline"){
+            element_to_show.style.display = "none"
+        }
+        else if(element_to_show.style.display != "inline"){
+            element_to_show.style.display = "inline"
+        }
+    }
+</script>
+  </body>
+
+</html>

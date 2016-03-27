@@ -1,0 +1,138 @@
+html { 
+    height:100%;
+}
+
+body{
+    background-image: url('../back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height:100%;
+}
+
+div.main{
+    position:absolute;
+    height:auto;
+    width: 700px;
+    top:50%;
+    left:50%;    
+    margin-top: -200px; 
+    margin-left:-350px;
+    z-index:15;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.5);  
+    
+}
+
+a.about{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:orange; 
+    font-size: 22px;
+    padding-bottom: 0px;
+
+}
+form{
+    float: left;
+    margin-right: 0;
+}
+
+form.leftcolumn{
+    margin-left: 30px;
+}
+select{
+    font-size: 25px
+}
+
+input{
+    margin-top: 15px;
+    font-size:15px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+img.ess {
+    margin-top:-35px;
+    margin-bottom:-35px;
+    height:200px;
+      display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+img.map{
+    float: right;
+    margin-right: 20px;
+    height:200px;
+    padding-bottom:20px;
+}
+
+
+p.about{
+    font-family: 'Roboto', sans-serif;
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+    color:orange;  
+    font-size:20px;
+    text-align: center; 
+    margin-top:145px;
+    z-index:1000; /*otherwise its behind the logo*/
+}
+
+
+p.diddy{
+    font-size: 15px; 
+}
+
+
+
+span.about{
+    position:absolute;
+    color:black;  
+    font-size:28px;
+    text-align: center;
+}
+
+
+h1.about{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    padding-top: 0px;
+    margin-top: -10px; 
+}
+
+
+
+th{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.change-view {
+    margin-bottom:20px;
+}
+
+
+/*FAQ PAGE*/
+div.FAQ{
+    margin-left: 20px;
+    width:550px;
+}
+p.question{
+    font-family: 'Roboto', sans-serif;
+    color:forestgreen;  
+    font-size:20px;
+}
+p.answer{
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+}
