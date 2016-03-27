@@ -1,0 +1,7 @@
+body{
+    background-image: url('../admin.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height:100%;
+}

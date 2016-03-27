@@ -9,6 +9,7 @@
     "morgan"     : "^1.2.2",
     "body-parser": "^1.5.2",
     "method-override": "^2.1.2",
-    "mysql": "^2.5.4"
+    "mysql": "^2.5.4",
+    "http-auth":"*"  
     }
 }
