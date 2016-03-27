@@ -22,7 +22,8 @@ div.main{
     background-color: #eeeeee;
     border-radius: 8px;
     box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.5);  
-    
+    margin-bottom:20px;
+    padding-bottom: 20px;
 }
 
 a.about{
@@ -83,7 +84,7 @@ p.about{
     color:orange;  
     font-size:20px;
     text-align: center; 
-    margin-top:145px;
+    margin-top:130px;
     z-index:1000; /*otherwise its behind the logo*/
 }
 
