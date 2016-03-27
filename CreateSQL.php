@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "lockers";
+$password = "";
 $database = "ELW";
 $table = "lockers";
 
@@ -47,7 +47,7 @@ if (mysqli_query($conn, $sql)) {
 
 for($i = 1; $i <= 308; $i++){
   $sql = "INSERT INTO lockers (locker_number, status)
-  VALUES ('.$i.','open');";
+  VALUES ($i,'open');";
 
 
   if (mysqli_query($conn, $sql)) {
