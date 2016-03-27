@@ -1,0 +1,14 @@
+{
+  "name"         : "ESS-lockers",
+  "version"      : "0.1.0",
+  "description"  : "ESS Locker Management.",
+  "main"         : "server.js",
+  "author"       : "Silver One",
+  "dependencies" : {
+    "express"    : "^4.7.2",
+    "morgan"     : "^1.2.2",
+    "body-parser": "^1.5.2",
+    "method-override": "^2.1.2",
+    "mysql": "^2.5.4"
+    }
+}
