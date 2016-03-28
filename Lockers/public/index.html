@@ -2,31 +2,30 @@
   <head>
     <link rel="stylesheet" href="../main.css"/>
     <link href="http://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <script src="core.js"></script>
     <title>ESS LOCKERS</title>
   </head>
-  <body>
+  <body ng-app="lockers" ng-controller="lockers">
     <p class="about"><a href="/faq" class="about">     FAQ  &nbsp</a><a href="/" class="about"> &nbsp   Register</a><a href="/contact" class="about"> &nbsp   Contact Admin</a></p>
-      <div class="jumbotron text-center main"><img src="../ess2.png" class="ess"/>
+     <div class="jumbotron text-center main" ><img src="../ess2.png" class="ess"/>    
+        <div ng-if="open === '' " ng-include="'/noLockers.html'"></div>
+        <div ng-if="open !== '' " ng-include="'/yesLockers.html'"></div>
+      </div>
       
-   
-          <form class= "leftcolumn">
-        <select class="select" required>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
-            <br>
-        <input type="text" name="firstname" placeholder="First Name" required>
-            <br>
-        <input type="text" name="lastname" placeholder="Last Name" required>
-            <br>
-
-        <input type="text" name="email" placeholder="Email" required pattern="[A-Za-z0-9/.]+@uvic.ca" title="UVic email address">   
-              <br>
-        <input type="submit" value="Register">
-        </form>
-        <div class="locker"><img src="../back.jpg" class="map"/>
-       </div>
+      <script type="text/javascript">
+            function show_more ( element_to_show ) {
+            var element_to_show = document.getElementById(element_to_show);
+            //console.log(element_to_show.style.display);
+            if(element_to_show.style.display == "inline"){
+                element_to_show.style.display = "none"
+            }
+            else if(element_to_show.style.display != "inline"){
+                element_to_show.style.display = "inline"
+            }
+            }
+      </script>
+    
   </body>
 </html>

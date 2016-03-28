@@ -1,0 +1,17 @@
+<form class= "leftcolumn">
+        <select class="select" ng-model="form" required
+            ng-options="data.locker_number as data.locker_number for data in open">
+            <!-- Don't make ng-model users make it a new var-->
+            <option></option>
+        </select>
+            <br>
+        <input type="text" name="firstname" placeholder="First Name" required>
+            <br>
+        <input type="text" name="lastname" placeholder="Last Name" required>
+            <br>
+
+        <input type="text" name="email" placeholder="Email" required pattern="[A-Za-z0-9/.]+@uvic.ca" title="UVic email address">   
+              <br>
+        <input type="submit" value="Register">
+</form>
+<div class="locker"><img src="../back.jpg" class="map"/>
