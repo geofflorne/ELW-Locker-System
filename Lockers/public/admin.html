@@ -5,11 +5,37 @@
 
     <link href="http://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css"/>
     <title>ESS ADMIN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="core.js"></script>
   </head>
   <body id="admin">
        <div class="jumbotron text-center main"><img src="../ess2.png" class="ess"/>
-
-      
-   hi admin
+        <div class="jumbotron text-center users" ng-app='lockers' ng-controller='lockers'>
+        <h1 class="users">Locker List</h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Locker Number</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Registration Date</th>
+              <th>Status</th>
+              <th>Renewed</th>
+              <th>Renewal Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="data in users">
+              <td>{{ data.locker_number }}</td>
+              <td>{{ data.name }}</td>
+              <td>{{ data.email }}</td>
+              <td>{{ data.registration_date }}</td>
+              <td>{{ data.status }}</td>
+              <td>{{ data.renewed }}</td>
+              <td>{{ data.renewed_date }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
   </body>
 </html>
