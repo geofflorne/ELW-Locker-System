@@ -5,3 +5,6 @@ body{
     position: relative;
     min-height:100%;
 }
+
+.table-bordered{ table-layout: fixed; } td{ word-wrap: break-word;}
+div.main{ width:1000px; margin-left:-500px; }
