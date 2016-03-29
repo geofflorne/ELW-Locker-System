@@ -7,11 +7,11 @@
   "dependencies": {
     "body-parser": "^1.5.2",
     "express": "^4.7.2",
+    "http-auth": "*",
     "method-override": "^2.1.2",
-    "mysql": "^2.5.4",
-    "http-auth":"*",
     "morgan": "^1.2.2",
     "mysql": "^2.5.4",
+    "request": "^2.69.0",
     "serve-favicon": "^2.3.0"
   }
 }
