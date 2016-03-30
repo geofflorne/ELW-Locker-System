@@ -9,11 +9,11 @@
   </head>
   <body ng-app="lockers" ng-controller="lockers">
     <p class="about"><a href="/faq" class="about">     FAQ  &nbsp</a><a href="/" class="about"> &nbsp   Register</a><a href="/contact" class="about"> &nbsp   Contact Admin</a></p>
-     <div class="jumbotron text-center main" ><img src="../ess2.png" class="ess"/>    
+     <div class="jumbotron text-center main" ><img src="../ess2.png" class="ess"/>
         <div ng-if="open === '' " ng-include="'/noLockers.html'"></div>
         <div ng-if="open !== '' " ng-include="'/yesLockers.html'"></div>
       </div>
-      
+
       <script type="text/javascript">
             function show_more ( element_to_show ) {
             var element_to_show = document.getElementById(element_to_show);
@@ -26,6 +26,6 @@
             }
             }
       </script>
-    
+
   </body>
 </html>
